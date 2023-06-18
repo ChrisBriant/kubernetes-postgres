@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: postgres
+    pod-template-hash: 59f7b8b68f
+  name: postgres-deployment-59f7b8b68f-db2ck
+spec:
+  ports:
+  - port: 5432
+    protocol: TCP
+    targetPort: 5432
+  selector:
+    app: postgres
+    pod-template-hash: 59f7b8b68f
+status:
+  loadBalancer: {}

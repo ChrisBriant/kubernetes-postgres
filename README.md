@@ -1,5 +1,18 @@
+# Kubernetes Deployments for Postgres with PGAdmin
+
+## About
+
+Just playing around with Kubernetes, spins up some containers, including Postgres so I can play around with the storage and accessing the DB using pgadmin and from other containers.
+
+
+## Minikube commands
 minikube ssh
 kubectl exec -it postgres-deployment-59f7b8b68f-9ggf8 -c postgres -- /bin/bash
+### Delete the minikube vm
+minikube delete
+### Start and stop
+minikube start
+minikube stop
 
 
 ## Create ubuntu container and access the terminal
